@@ -15,7 +15,7 @@ export default function Navbar({ active }: { active: string }) {
       <ul>
         {pry_nav_items.map((item, index) => (
           <li className={`${styles.pry_nav_item} ${active === item.toLowerCase() ? styles.active : ''}`} key={item+index}>
-            <Link href={`/${item.toLowerCase()}`}>
+            <Link href={item.toLowerCase() === 'home' ? '/' : `/${item.toLowerCase()}`}>
               {item}
             </Link>
           </li>
