@@ -1,0 +1,18 @@
+.main_container {
+  padding: 8px;
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 85%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    max-width: 95%;
+  }
+}
