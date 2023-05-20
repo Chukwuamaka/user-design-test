@@ -1,0 +1,56 @@
+.nav_container {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pry_nav_item {
+  padding: 4px 8px;
+  display: inline-block;
+  color: white;
+  background-color: purple;
+}
+
+.pry_nav_item.active {
+  color: black;
+  background-color: gainsboro;
+  font-weight: 600;
+}
+
+.sec_nav_item {
+  padding: 4px 20px;
+  display: inline-block;
+  color: white;
+  background-color: purple;
+  text-align: center;
+}
+
+.nav_icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav_container {
+    max-width: 96.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav_container {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav_container {
+    max-width: 100%;
+  }
+
+  .pry_nav_item {
+    font-size: 0.875rem;
+  }
+}
