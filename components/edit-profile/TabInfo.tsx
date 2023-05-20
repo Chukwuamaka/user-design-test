@@ -3,6 +3,7 @@ import styles from '../../styles/TabInfo.module.css';
 import { CloudArrowUpIcon, FingerPrintIcon, PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid';
 import InfoSection from './InfoSection';
 import next from '../../public/next.svg';
+import segun_adebayo from '../../public/segun_adebayo.webp';
 
 const biodata_info = [
   { name: 'Title', value: 'Mr.' },
@@ -48,7 +49,7 @@ export default function TabInfo() {
       <div className={styles.main_info_content}>
         <div className={`d-flex justify-sb align-center ${styles.update_profile_container}`}>
           <div className={styles.profile_image_container}>
-            <Image src='https://bit.ly/sage-adebayo' width={110} height={110} alt='Segun Adebayo' />
+            <Image src={segun_adebayo} width={110} height={110} alt='Segun Adebayo' />
             <button className={styles.view_photo_btn}>
               <span className={styles.btn_text}>View photo</span>
               <PhotoIcon className={styles.btn_icon} />
